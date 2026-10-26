@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register as a student member of the College Coding Club.">
+    <title>College Club - Registration</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+    <header>
+        <h1>Club Registration</h1>
+
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="registration.html">Registration</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Join Our Club</h2>
+        <p>Fill in the form to apply for membership.</p>
+
+        <form action="#" method="post">
+
+            <p>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </p>
+
+            <p>
+                <label for="roll">College Roll Number:</label>
+                <input type="text" id="roll" name="roll" required>
+            </p>
+
+            <p>
+                <label for="course">Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">Select Course</option>
+                    <option value="bca">BCA</option>
+                    <option value="btech">B.Tech</option>
+                    <option value="bsc">B.Sc.</option>
+                    <option value="bcom">B.Com.</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+
+            <fieldset>
+                <legend>Areas of Interest</legend>
+
+                <input type="checkbox" id="web" name="interest" value="web">
+                <label for="web">Web Development</label>
+
+                <input type="checkbox" id="programming" name="interest" value="programming">
+                <label for="programming">Programming</label>
+
+                <input type="checkbox" id="design" name="interest" value="design">
+                <label for="design">Technology Projects</label>
+            </fieldset>
+
+            <p>
+                <label for="reason">Why do you want to join?</label><br>
+                <textarea id="reason" name="reason" rows="4" cols="35"></textarea>
+            </p>
+
+            <button type="submit">Submit Registration</button>
+            <button type="reset">Reset Form</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 College Coding Club</p>
+    </footer>
+
+</body>
+</html>
